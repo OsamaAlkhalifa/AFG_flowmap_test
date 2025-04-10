@@ -1,57 +1,257 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <title>Returnee Flow Map</title>
-  <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css" />
-  <script src="https://js.arcgis.com/4.28/"></script>
-  <script src="CanvasFlowmapLayer.js"></script>
-  <script src="app.js"></script>
+  <meta charset="utf-8" />
+  <title>Animated Flowmap - Mapbox</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
   <style>
-    html, body, #viewDiv {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-    }
-    #filterPanel, #legend {
+    body { margin: 0; padding: 0; }
+    #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+    canvas.flowmap {
       position: absolute;
-      background: white;
-      padding: 10px;
-      border-radius: 6px;
-      box-shadow: 0 0 5px #aaa;
-      z-index: 99;
-      font-size: 13px;
+      top: 0; left: 0;
+      pointer-events: none;
     }
-    #filterPanel { top: 10px; left: 10px; }
-    #legend { bottom: 20px; left: 10px; font-size: 12px; }
   </style>
-  <script>
-    require(["CanvasFlowmapLayer", "app"]);
-  </script>
 </head>
 <body>
-  <div id="viewDiv"></div>
 
-  <div id="filterPanel">
-    <h4>Select Border Points</h4>
-    <!-- we'll auto-populate this using JS -->
-  </div>
+<div id="map"></div>
+<canvas id="flowCanvas" class="flowmap"></canvas>
 
-  <div id="legend">
-    <strong>Border Point</strong> <span style="color:blue;">●</span><br />
-    <strong>Province of Return</strong> <span style="color:orange;">●</span><br /><br />
-    <strong>Flow:</strong><br />
-    <svg height="30" width="100">
-      <line x1="0" y1="5" x2="80" y2="5" style="stroke:#FFA500;stroke-width:1" />
-      <text x="85" y="10" font-size="10px">&lt; 10,000</text>
-      <line x1="0" y1="15" x2="80" y2="15" style="stroke:#FF4500;stroke-width:4" />
-      <text x="85" y="20" font-size="10px">10k - 50k</text>
-      <line x1="0" y1="25" x2="80" y2="25" style="stroke:#B22222;stroke-width:7" />
-      <text x="85" y="30" font-size="10px">&gt; 50,000</text>
-    </svg>
-  </div>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1Ijoib2Fsa2hhbGlmYSIsImEiOiJjbTV6YWVjZmQwMGl1MmxzZnppbnZjYmJyIn0.IoVs0_2CQotH_t4wFQFACw';
 
-  <script src="app.js"></script>
+  const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/light-v11',
+    center: [66, 33],
+    zoom: 6
+  });
+
+  const canvas = document.getElementById("flowCanvas");
+  const ctx = canvas.getContext("2d");
+
+  const points = [
+  { from: [60.873467, 32.165039], to: [70.190078, 34.640812], magnitude: 6 },
+  { from: [60.873467, 32.165039], to: [68.532772, 35.493251], magnitude: 6 },
+  { from: [60.873467, 32.165039], to: [67.767134, 33.086709], magnitude: 7 },
+  { from: [60.873467, 32.165039], to: [63.985773, 30.459468], magnitude: 6 },
+  { from: [60.873467, 32.165039], to: [62.015471, 33.583128], magnitude: 26 },
+  { from: [60.873467, 32.165039], to: [61.814847, 32.385918], magnitude: 4756 },
+  { from: [60.873467, 32.165039], to: [62.059899, 30.175326], magnitude: 6 },
+  { from: [69.272673, 32.519404], to: [69.589362, 34.498247], magnitude: 2 },
+  { from: [69.272673, 32.519404], to: [68.504375, 33.990654], magnitude: 2 },
+  { from: [69.272673, 32.519404], to: [68.970646, 33.812225], magnitude: 2 },
+  { from: [69.272673, 32.519404], to: [67.767134, 33.086709], magnitude: 14 },
+  { from: [69.272673, 32.519404], to: [68.751118, 32.169088], magnitude: 557 },
+  { from: [69.272673, 32.519404], to: [69.480059, 33.785489], magnitude: 16 },
+  { from: [69.272673, 32.519404], to: [70.120995, 33.366603], magnitude: 12 },
+  { from: [69.272673, 32.519404], to: [70.810303, 36.960125], magnitude: 2 },
+  { from: [69.272673, 32.519404], to: [66.864417, 36.266376], magnitude: 4 },
+  { from: [64.015136, 29.42026], to: [69.589362, 34.498247], magnitude: 104 },
+  { from: [64.015136, 29.42026], to: [68.504375, 33.990654], magnitude: 206 },
+  { from: [64.015136, 29.42026], to: [70.840961, 34.261704], magnitude: 26 },
+  { from: [64.015136, 29.42026], to: [67.767134, 33.086709], magnitude: 180 },
+  { from: [64.015136, 29.42026], to: [70.120995, 33.366603], magnitude: 26 },
+  { from: [64.015136, 29.42026], to: [66.864417, 36.266376], magnitude: 26 },
+  { from: [64.015136, 29.42026], to: [66.578813, 33.132149], magnitude: 52 },
+  { from: [64.015136, 29.42026], to: [67.572755, 31.892012], magnitude: 78 },
+  { from: [64.015136, 29.42026], to: [65.667892, 30.561242], magnitude: 437 },
+  { from: [64.015136, 29.42026], to: [63.985773, 30.459468], magnitude: 3198 },
+  { from: [64.015136, 29.42026], to: [62.015471, 33.583128], magnitude: 26 },
+  { from: [64.015136, 29.42026], to: [61.814847, 32.385918], magnitude: 26 },
+  { from: [64.015136, 29.42026], to: [62.059899, 30.175326], magnitude: 26 },
+  { from: [70.029985, 33.150936], to: [69.589362, 34.498247], magnitude: 108 },
+  { from: [70.029985, 33.150936], to: [68.504375, 33.990654], magnitude: 148 },
+  { from: [70.029985, 33.150936], to: [68.970646, 33.812225], magnitude: 646 },
+  { from: [70.029985, 33.150936], to: [66.965771, 34.586525], magnitude: 10 },
+  { from: [70.029985, 33.150936], to: [67.767134, 33.086709], magnitude: 1920 },
+  { from: [70.029985, 33.150936], to: [68.751118, 32.169088], magnitude: 19914 },
+  { from: [70.029985, 33.150936], to: [69.480059, 33.785489], magnitude: 2283 },
+  { from: [70.029985, 33.150936], to: [70.120995, 33.366603], magnitude: 24668 },
+  { from: [70.029985, 33.150936], to: [71.400403, 35.14243], magnitude: 19 },
+  { from: [70.029985, 33.150936], to: [68.751391, 36.585567], magnitude: 10 },
+  { from: [70.029985, 33.150936], to: [64.839648, 33.877773], magnitude: 10 },
+  { from: [70.029985, 33.150936], to: [65.667892, 30.561242], magnitude: 10 },
+  { from: [70.029985, 33.150936], to: [63.985773, 30.459468], magnitude: 10 },
+  { from: [61.00488, 34.70799], to: [69.589362, 34.498247], magnitude: 63924 },
+  { from: [61.00488, 34.70799], to: [69.579117, 35.029641], magnitude: 12084 },
+  { from: [61.00488, 34.70799], to: [68.540249, 34.858063], magnitude: 16482 },
+  { from: [61.00488, 34.70799], to: [68.504375, 33.990654], magnitude: 4982 },
+  { from: [61.00488, 34.70799], to: [68.970646, 33.812225], magnitude: 2550 },
+  { from: [61.00488, 34.70799], to: [70.840961, 34.261704], magnitude: 6830 },
+  { from: [61.00488, 34.70799], to: [70.190078, 34.640812], magnitude: 2238 },
+  { from: [61.00488, 34.70799], to: [70.062755, 35.64688], magnitude: 2900 },
+  { from: [61.00488, 34.70799], to: [68.532772, 35.493251], magnitude: 26834 },
+  { from: [61.00488, 34.70799], to: [66.965771, 34.586525], magnitude: 9224 },
+  { from: [61.00488, 34.70799], to: [67.767134, 33.086709], magnitude: 12570 },
+  { from: [61.00488, 34.70799], to: [68.751118, 32.169088], magnitude: 312 },
+  { from: [61.00488, 34.70799], to: [69.480059, 33.785489], magnitude: 1246 },
+  { from: [61.00488, 34.70799], to: [70.120995, 33.366603], magnitude: 448 },
+  { from: [61.00488, 34.70799], to: [71.400403, 35.14243], magnitude: 1226 },
+  { from: [61.00488, 34.70799], to: [71.197724, 35.570893], magnitude: 176 },
+  { from: [61.00488, 34.70799], to: [70.810303, 36.960125], magnitude: 17454 },
+  { from: [61.00488, 34.70799], to: [69.718364, 37.088414], magnitude: 20782 },
+  { from: [61.00488, 34.70799], to: [68.751391, 36.585567], magnitude: 23370 },
+  { from: [61.00488, 34.70799], to: [67.701666, 35.699701], magnitude: 4904 },
+  { from: [61.00488, 34.70799], to: [66.864417, 36.266376], magnitude: 36602 },
+  { from: [61.00488, 34.70799], to: [66.121856, 35.989303], magnitude: 18740 },
+  { from: [61.00488, 34.70799], to: [64.839648, 33.877773], magnitude: 15820 },
+  { from: [61.00488, 34.70799], to: [66.140083, 34.043118], magnitude: 13116 },
+  { from: [61.00488, 34.70799], to: [66.578813, 33.132149], magnitude: 1538 },
+  { from: [61.00488, 34.70799], to: [67.572755, 31.892012], magnitude: 928 },
+  { from: [61.00488, 34.70799], to: [65.667892, 30.561242], magnitude: 1966 },
+  { from: [61.00488, 34.70799], to: [65.908307, 36.727944], magnitude: 9632 },
+  { from: [61.00488, 34.70799], to: [64.848759, 35.641452], magnitude: 33606 },
+  { from: [61.00488, 34.70799], to: [63.985773, 30.459468], magnitude: 1868 },
+  { from: [61.00488, 34.70799], to: [63.61264, 35.516666], magnitude: 19148 },
+  { from: [61.00488, 34.70799], to: [62.015471, 33.583128], magnitude: 129306 },
+  { from: [61.00488, 34.70799], to: [61.814847, 32.385918], magnitude: 2510 },
+  { from: [61.00488, 34.70799], to: [62.059899, 30.175326], magnitude: 1654 },
+  { from: [69.943411, 33.834275], to: [68.970646, 33.812225], magnitude: 8 },
+  { from: [69.943411, 33.834275], to: [67.767134, 33.086709], magnitude: 6 },
+  { from: [69.943411, 33.834275], to: [68.751118, 32.169088], magnitude: 2 },
+  { from: [69.943411, 33.834275], to: [69.480059, 33.785489], magnitude: 48 },
+  { from: [69.943411, 33.834275], to: [70.120995, 33.366603], magnitude: 48 },
+  { from: [66.437425, 30.955879], to: [69.589362, 34.498247], magnitude: 4608 },
+  { from: [66.437425, 30.955879], to: [69.579117, 35.029641], magnitude: 156 },
+  { from: [66.437425, 30.955879], to: [68.540249, 34.858063], magnitude: 350 },
+  { from: [66.437425, 30.955879], to: [68.504375, 33.990654], magnitude: 1516 },
+  { from: [66.437425, 30.955879], to: [68.970646, 33.812225], magnitude: 516 },
+  { from: [66.437425, 30.955879], to: [70.840961, 34.261704], magnitude: 380 },
+  { from: [66.437425, 30.955879], to: [70.190078, 34.640812], magnitude: 156 },
+  { from: [66.437425, 30.955879], to: [68.532772, 35.493251], magnitude: 1604 },
+  { from: [66.437425, 30.955879], to: [66.965771, 34.586525], magnitude: 156 },
+  { from: [66.437425, 30.955879], to: [67.767134, 33.086709], magnitude: 11686 },
+  { from: [66.437425, 30.955879], to: [68.751118, 32.169088], magnitude: 2692 },
+  { from: [66.437425, 30.955879], to: [69.480059, 33.785489], magnitude: 680 },
+  { from: [66.437425, 30.955879], to: [70.120995, 33.366603], magnitude: 330 },
+  { from: [66.437425, 30.955879], to: [71.400403, 35.14243], magnitude: 106 },
+  { from: [66.437425, 30.955879], to: [70.810303, 36.960125], magnitude: 156 },
+  { from: [66.437425, 30.955879], to: [69.718364, 37.088414], magnitude: 763 },
+  { from: [66.437425, 30.955879], to: [68.751391, 36.585567], magnitude: 4278 },
+  { from: [66.437425, 30.955879], to: [67.701666, 35.699701], magnitude: 350 },
+  { from: [66.437425, 30.955879], to: [66.864417, 36.266376], magnitude: 816 },
+  { from: [66.437425, 30.955879], to: [66.121856, 35.989303], magnitude: 1448 },
+  { from: [66.437425, 30.955879], to: [64.839648, 33.877773], magnitude: 272 },
+  { from: [66.437425, 30.955879], to: [66.140083, 34.043118], magnitude: 806 },
+  { from: [66.437425, 30.955879], to: [66.578813, 33.132149], magnitude: 7942 },
+  { from: [66.437425, 30.955879], to: [67.572755, 31.892012], magnitude: 7116 },
+  { from: [66.437425, 30.955879], to: [65.667892, 30.561242], magnitude: 30778 },
+  { from: [66.437425, 30.955879], to: [65.908307, 36.727944], magnitude: 1420 },
+  { from: [66.437425, 30.955879], to: [64.848759, 35.641452], magnitude: 602 },
+  { from: [66.437425, 30.955879], to: [63.985773, 30.459468], magnitude: 8788 },
+  { from: [66.437425, 30.955879], to: [63.61264, 35.516666], magnitude: 398 },
+  { from: [66.437425, 30.955879], to: [62.015471, 33.583128], magnitude: 6114 },
+  { from: [66.437425, 30.955879], to: [61.814847, 32.385918], magnitude: 2470 },
+  { from: [66.437425, 30.955879], to: [62.059899, 30.175326], magnitude: 836 },
+  { from: [71.093202, 34.122641], to: [69.589362, 34.498247], magnitude: 97882 },
+  { from: [71.093202, 34.122641], to: [69.579117, 35.029641], magnitude: 4666 },
+  { from: [71.093202, 34.122641], to: [68.540249, 34.858063], magnitude: 5068 },
+  { from: [71.093202, 34.122641], to: [68.504375, 33.990654], magnitude: 3156 },
+  { from: [71.093202, 34.122641], to: [68.970646, 33.812225], magnitude: 9892 },
+  { from: [71.093202, 34.122641], to: [70.840961, 34.261704], magnitude: 132730 },
+  { from: [71.093202, 34.122641], to: [70.190078, 34.640812], magnitude: 17976 },
+  { from: [71.093202, 34.122641], to: [70.062755, 35.64688], magnitude: 1894 },
+  { from: [71.093202, 34.122641], to: [68.532772, 35.493251], magnitude: 8822 },
+  { from: [71.093202, 34.122641], to: [66.965771, 34.586525], magnitude: 1648 },
+  { from: [71.093202, 34.122641], to: [67.767134, 33.086709], magnitude: 4086 },
+  { from: [71.093202, 34.122641], to: [68.751118, 32.169088], magnitude: 4700 },
+  { from: [71.093202, 34.122641], to: [69.480059, 33.785489], magnitude: 8384 },
+  { from: [71.093202, 34.122641], to: [70.120995, 33.366603], magnitude: 5928 },
+  { from: [71.093202, 34.122641], to: [71.400403, 35.14243], magnitude: 19766 },
+  { from: [71.093202, 34.122641], to: [71.197724, 35.570893], magnitude: 474 },
+  { from: [71.093202, 34.122641], to: [70.810303, 36.960125], magnitude: 1052 },
+  { from: [71.093202, 34.122641], to: [69.718364, 37.088414], magnitude: 1806 },
+  { from: [71.093202, 34.122641], to: [68.751391, 36.585567], magnitude: 11820 },
+  { from: [71.093202, 34.122641], to: [67.701666, 35.699701], magnitude: 1350 },
+  { from: [71.093202, 34.122641], to: [66.864417, 36.266376], magnitude: 7858 },
+  { from: [71.093202, 34.122641], to: [66.121856, 35.989303], magnitude: 176 },
+  { from: [71.093202, 34.122641], to: [64.839648, 33.877773], magnitude: 176 },
+  { from: [71.093202, 34.122641], to: [66.140083, 34.043118], magnitude: 350 },
+  { from: [71.093202, 34.122641], to: [66.578813, 33.132149], magnitude: 70 },
+  { from: [71.093202, 34.122641], to: [67.572755, 31.892012], magnitude: 106 },
+  { from: [71.093202, 34.122641], to: [65.667892, 30.561242], magnitude: 1350 },
+  { from: [71.093202, 34.122641], to: [65.908307, 36.727944], magnitude: 1614 },
+  { from: [71.093202, 34.122641], to: [64.848759, 35.641452], magnitude: 562 },
+  { from: [71.093202, 34.122641], to: [63.985773, 30.459468], magnitude: 176 },
+  { from: [71.093202, 34.122641], to: [63.61264, 35.516666], magnitude: 88 },
+  { from: [71.093202, 34.122641], to: [62.015471, 33.583128], magnitude: 5122 },
+  { from: [71.093202, 34.122641], to: [61.814847, 32.385918], magnitude: 246 },
+  { from: [71.093202, 34.122641], to: [62.059899, 30.175326], magnitude: 122 },
+  { from: [61.823383, 30.96555], to: [69.589362, 34.498247], magnitude: 20948 },
+  { from: [61.823383, 30.96555], to: [69.579117, 35.029641], magnitude: 10134 },
+  { from: [61.823383, 30.96555], to: [68.540249, 34.858063], magnitude: 9036 },
+  { from: [61.823383, 30.96555], to: [68.504375, 33.990654], magnitude: 2660 },
+  { from: [61.823383, 30.96555], to: [68.970646, 33.812225], magnitude: 2314 },
+  { from: [61.823383, 30.96555], to: [70.840961, 34.261704], magnitude: 4916 },
+  { from: [61.823383, 30.96555], to: [70.190078, 34.640812], magnitude: 6042 },
+  { from: [61.823383, 30.96555], to: [70.062755, 35.64688], magnitude: 896 },
+  { from: [61.823383, 30.96555], to: [68.532772, 35.493251], magnitude: 17898 },
+  { from: [61.823383, 30.96555], to: [66.965771, 34.586525], magnitude: 1864 },
+  { from: [61.823383, 30.96555], to: [67.767134, 33.086709], magnitude: 7850 },
+  { from: [61.823383, 30.96555], to: [68.751118, 32.169088], magnitude: 1416 },
+  { from: [61.823383, 30.96555], to: [69.480059, 33.785489], magnitude: 636 },
+  { from: [61.823383, 30.96555], to: [70.120995, 33.366603], magnitude: 506 },
+  { from: [61.823383, 30.96555], to: [71.400403, 35.14243], magnitude: 534 },
+  { from: [61.823383, 30.96555], to: [71.197724, 35.570893], magnitude: 86 },
+  { from: [61.823383, 30.96555], to: [70.810303, 36.960125], magnitude: 10236 },
+  { from: [61.823383, 30.96555], to: [69.718364, 37.088414], magnitude: 34204 },
+  { from: [61.823383, 30.96555], to: [68.751391, 36.585567], magnitude: 28306 },
+  { from: [61.823383, 30.96555], to: [67.701666, 35.699701], magnitude: 3426 },
+  { from: [61.823383, 30.96555], to: [66.864417, 36.266376], magnitude: 18258 },
+  { from: [61.823383, 30.96555], to: [66.121856, 35.989303], magnitude: 7576 },
+  { from: [61.823383, 30.96555], to: [64.839648, 33.877773], magnitude: 6866 },
+  { from: [61.823383, 30.96555], to: [66.140083, 34.043118], magnitude: 3354 },
+  { from: [61.823383, 30.96555], to: [66.578813, 33.132149], magnitude: 258 },
+  { from: [61.823383, 30.96555], to: [67.572755, 31.892012], magnitude: 1792 },
+  { from: [61.823383, 30.96555], to: [65.667892, 30.561242], magnitude: 2168 },
+  { from: [61.823383, 30.96555], to: [65.908307, 36.727944], magnitude: 3888 },
+  { from: [61.823383, 30.96555], to: [64.848759, 35.641452], magnitude: 8848 },
+  { from: [61.823383, 30.96555], to: [63.985773, 30.459468], magnitude: 9556 },
+  { from: [61.823383, 30.96555], to: [63.61264, 35.516666], magnitude: 8458 },
+  { from: [61.823383, 30.96555], to: [62.015471, 33.583128], magnitude: 18086 },
+  { from: [61.823383, 30.96555], to: [61.814847, 32.385918], magnitude: 29232 },
+  { from: [61.823383, 30.96555], to: [62.059899, 30.175326], magnitude: 27916 },
+];
+
+  function resizeCanvas() {
+    canvas.width = map.getCanvas().width;
+    canvas.height = map.getCanvas().height;
+  }
+
+  map.on('load', () => {
+    resizeCanvas();
+
+    function drawFlow() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.lineCap = "round";
+
+      for (const point of points) {
+        const fromPixel = map.project([point.from[0], point.from[1]]);
+        const toPixel = map.project([point.to[0], point.to[1]]);
+
+        const lineWidth = Math.max(1, point.magnitude / 10000);
+        ctx.strokeStyle = "rgba(255, 87, 51, 0.7)";
+        ctx.lineWidth = lineWidth;
+
+        ctx.beginPath();
+        ctx.moveTo(fromPixel.x, fromPixel.y);
+        ctx.lineTo(toPixel.x, toPixel.y);
+        ctx.stroke();
+      }
+
+      requestAnimationFrame(drawFlow);
+    }
+
+    drawFlow();
+  });
+
+  map.on('move', resizeCanvas);
+</script>
+
 </body>
 </html>
