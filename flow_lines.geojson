@@ -1,0 +1,3806 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            60.873467,
+            32.165039
+          ],
+          [
+            70.190078,
+            34.640812
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Abu Nasr Farahi",
+        "province": "Laghman",
+        "magnitude": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            60.873467,
+            32.165039
+          ],
+          [
+            68.532772,
+            35.493251
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Abu Nasr Farahi",
+        "province": "Baghlan",
+        "magnitude": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            60.873467,
+            32.165039
+          ],
+          [
+            67.767134,
+            33.086709
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Abu Nasr Farahi",
+        "province": "Ghazni",
+        "magnitude": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            60.873467,
+            32.165039
+          ],
+          [
+            63.985773,
+            30.459468
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Abu Nasr Farahi",
+        "province": "Helmand",
+        "magnitude": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            60.873467,
+            32.165039
+          ],
+          [
+            62.015471,
+            33.583128
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Abu Nasr Farahi",
+        "province": "Herat",
+        "magnitude": 26
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            60.873467,
+            32.165039
+          ],
+          [
+            61.814847,
+            32.385918
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Abu Nasr Farahi",
+        "province": "Farah",
+        "magnitude": 4756
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            60.873467,
+            32.165039
+          ],
+          [
+            62.059899,
+            30.175326
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Abu Nasr Farahi",
+        "province": "Nimroz",
+        "magnitude": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            69.272673,
+            32.519404
+          ],
+          [
+            69.589362,
+            34.498247
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Angor ada",
+        "province": "Kabul",
+        "magnitude": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            69.272673,
+            32.519404
+          ],
+          [
+            68.504375,
+            33.990654
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Angor ada",
+        "province": "Wardak",
+        "magnitude": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            69.272673,
+            32.519404
+          ],
+          [
+            68.970646,
+            33.812225
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Angor ada",
+        "province": "Logar",
+        "magnitude": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            69.272673,
+            32.519404
+          ],
+          [
+            67.767134,
+            33.086709
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Angor ada",
+        "province": "Ghazni",
+        "magnitude": 14
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            69.272673,
+            32.519404
+          ],
+          [
+            68.751118,
+            32.169088
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Angor ada",
+        "province": "Paktika",
+        "magnitude": 557
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            69.272673,
+            32.519404
+          ],
+          [
+            69.480059,
+            33.785489
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Angor ada",
+        "province": "Paktya",
+        "magnitude": 16
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            69.272673,
+            32.519404
+          ],
+          [
+            70.120995,
+            33.366603
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Angor ada",
+        "province": "Khost",
+        "magnitude": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            69.272673,
+            32.519404
+          ],
+          [
+            70.810303,
+            36.960125
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Angor ada",
+        "province": "Badakhshan",
+        "magnitude": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            69.272673,
+            32.519404
+          ],
+          [
+            66.864417,
+            36.266376
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Angor ada",
+        "province": "Balkh",
+        "magnitude": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            64.015136,
+            29.42026
+          ],
+          [
+            69.589362,
+            34.498247
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Bahramcha",
+        "province": "Kabul",
+        "magnitude": 104
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            64.015136,
+            29.42026
+          ],
+          [
+            68.504375,
+            33.990654
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Bahramcha",
+        "province": "Wardak",
+        "magnitude": 206
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            64.015136,
+            29.42026
+          ],
+          [
+            70.840961,
+            34.261704
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Bahramcha",
+        "province": "Nangarhar",
+        "magnitude": 26
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            64.015136,
+            29.42026
+          ],
+          [
+            67.767134,
+            33.086709
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Bahramcha",
+        "province": "Ghazni",
+        "magnitude": 180
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            64.015136,
+            29.42026
+          ],
+          [
+            70.120995,
+            33.366603
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Bahramcha",
+        "province": "Khost",
+        "magnitude": 26
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            64.015136,
+            29.42026
+          ],
+          [
+            66.864417,
+            36.266376
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Bahramcha",
+        "province": "Balkh",
+        "magnitude": 26
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            64.015136,
+            29.42026
+          ],
+          [
+            66.578813,
+            33.132149
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Bahramcha",
+        "province": "Uruzgan",
+        "magnitude": 52
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            64.015136,
+            29.42026
+          ],
+          [
+            67.572755,
+            31.892012
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Bahramcha",
+        "province": "Zabul",
+        "magnitude": 78
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            64.015136,
+            29.42026
+          ],
+          [
+            65.667892,
+            30.561242
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Bahramcha",
+        "province": "Kandahar",
+        "magnitude": 437
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            64.015136,
+            29.42026
+          ],
+          [
+            63.985773,
+            30.459468
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Bahramcha",
+        "province": "Helmand",
+        "magnitude": 3198
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            64.015136,
+            29.42026
+          ],
+          [
+            62.015471,
+            33.583128
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Bahramcha",
+        "province": "Herat",
+        "magnitude": 26
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            64.015136,
+            29.42026
+          ],
+          [
+            61.814847,
+            32.385918
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Bahramcha",
+        "province": "Farah",
+        "magnitude": 26
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            64.015136,
+            29.42026
+          ],
+          [
+            62.059899,
+            30.175326
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Bahramcha",
+        "province": "Nimroz",
+        "magnitude": 26
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.029985,
+            33.150936
+          ],
+          [
+            69.589362,
+            34.498247
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Ghulam Khan",
+        "province": "Kabul",
+        "magnitude": 108
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.029985,
+            33.150936
+          ],
+          [
+            68.504375,
+            33.990654
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Ghulam Khan",
+        "province": "Wardak",
+        "magnitude": 148
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.029985,
+            33.150936
+          ],
+          [
+            68.970646,
+            33.812225
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Ghulam Khan",
+        "province": "Logar",
+        "magnitude": 646
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.029985,
+            33.150936
+          ],
+          [
+            66.965771,
+            34.586525
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Ghulam Khan",
+        "province": "Bamyan",
+        "magnitude": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.029985,
+            33.150936
+          ],
+          [
+            67.767134,
+            33.086709
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Ghulam Khan",
+        "province": "Ghazni",
+        "magnitude": 1920
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.029985,
+            33.150936
+          ],
+          [
+            68.751118,
+            32.169088
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Ghulam Khan",
+        "province": "Paktika",
+        "magnitude": 19914
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.029985,
+            33.150936
+          ],
+          [
+            69.480059,
+            33.785489
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Ghulam Khan",
+        "province": "Paktya",
+        "magnitude": 2283
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.029985,
+            33.150936
+          ],
+          [
+            70.120995,
+            33.366603
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Ghulam Khan",
+        "province": "Khost",
+        "magnitude": 24668
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.029985,
+            33.150936
+          ],
+          [
+            71.400403,
+            35.14243
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Ghulam Khan",
+        "province": "Kunar",
+        "magnitude": 19
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.029985,
+            33.150936
+          ],
+          [
+            68.751391,
+            36.585567
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Ghulam Khan",
+        "province": "Kunduz",
+        "magnitude": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.029985,
+            33.150936
+          ],
+          [
+            64.839648,
+            33.877773
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Ghulam Khan",
+        "province": "Ghor",
+        "magnitude": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.029985,
+            33.150936
+          ],
+          [
+            65.667892,
+            30.561242
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Ghulam Khan",
+        "province": "Kandahar",
+        "magnitude": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.029985,
+            33.150936
+          ],
+          [
+            63.985773,
+            30.459468
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Ghulam Khan",
+        "province": "Helmand",
+        "magnitude": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            69.589362,
+            34.498247
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Kabul",
+        "magnitude": 63924
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            69.579117,
+            35.029641
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Kapisa",
+        "magnitude": 12084
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            68.540249,
+            34.858063
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Parwan",
+        "magnitude": 16482
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            68.504375,
+            33.990654
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Wardak",
+        "magnitude": 4982
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            68.970646,
+            33.812225
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Logar",
+        "magnitude": 2550
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            70.840961,
+            34.261704
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Nangarhar",
+        "magnitude": 6830
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            70.190078,
+            34.640812
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Laghman",
+        "magnitude": 2238
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            70.062755,
+            35.64688
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Panjsher",
+        "magnitude": 2900
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            68.532772,
+            35.493251
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Baghlan",
+        "magnitude": 26834
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            66.965771,
+            34.586525
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Bamyan",
+        "magnitude": 9224
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            67.767134,
+            33.086709
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Ghazni",
+        "magnitude": 12570
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            68.751118,
+            32.169088
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Paktika",
+        "magnitude": 312
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            69.480059,
+            33.785489
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Paktya",
+        "magnitude": 1246
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            70.120995,
+            33.366603
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Khost",
+        "magnitude": 448
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            71.400403,
+            35.14243
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Kunar",
+        "magnitude": 1226
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            71.197724,
+            35.570893
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Nuristan",
+        "magnitude": 176
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            70.810303,
+            36.960125
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Badakhshan",
+        "magnitude": 17454
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            69.718364,
+            37.088414
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Takhar",
+        "magnitude": 20782
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            68.751391,
+            36.585567
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Kunduz",
+        "magnitude": 23370
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            67.701666,
+            35.699701
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Samangan",
+        "magnitude": 4904
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            66.864417,
+            36.266376
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Balkh",
+        "magnitude": 36602
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            66.121856,
+            35.989303
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Sar-e-Pul",
+        "magnitude": 18740
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            64.839648,
+            33.877773
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Ghor",
+        "magnitude": 15820
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            66.140083,
+            34.043118
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Daykundi",
+        "magnitude": 13116
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            66.578813,
+            33.132149
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Uruzgan",
+        "magnitude": 1538
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            67.572755,
+            31.892012
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Zabul",
+        "magnitude": 928
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            65.667892,
+            30.561242
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Kandahar",
+        "magnitude": 1966
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            65.908307,
+            36.727944
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Jawzjan",
+        "magnitude": 9632
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            64.848759,
+            35.641452
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Faryab",
+        "magnitude": 33606
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            63.985773,
+            30.459468
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Helmand",
+        "magnitude": 1868
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            63.61264,
+            35.516666
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Badghis",
+        "magnitude": 19148
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            62.015471,
+            33.583128
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Herat",
+        "magnitude": 129306
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            61.814847,
+            32.385918
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Farah",
+        "magnitude": 2510
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.00488,
+            34.70799
+          ],
+          [
+            62.059899,
+            30.175326
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Islam Qala - Taybad",
+        "province": "Nimroz",
+        "magnitude": 1654
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            69.943411,
+            33.834275
+          ],
+          [
+            68.970646,
+            33.812225
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Pathan",
+        "province": "Logar",
+        "magnitude": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            69.943411,
+            33.834275
+          ],
+          [
+            67.767134,
+            33.086709
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Pathan",
+        "province": "Ghazni",
+        "magnitude": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            69.943411,
+            33.834275
+          ],
+          [
+            68.751118,
+            32.169088
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Pathan",
+        "province": "Paktika",
+        "magnitude": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            69.943411,
+            33.834275
+          ],
+          [
+            69.480059,
+            33.785489
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Pathan",
+        "province": "Paktya",
+        "magnitude": 48
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            69.943411,
+            33.834275
+          ],
+          [
+            70.120995,
+            33.366603
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Pathan",
+        "province": "Khost",
+        "magnitude": 48
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            69.589362,
+            34.498247
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Kabul",
+        "magnitude": 4608
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            69.579117,
+            35.029641
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Kapisa",
+        "magnitude": 156
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            68.540249,
+            34.858063
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Parwan",
+        "magnitude": 350
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            68.504375,
+            33.990654
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Wardak",
+        "magnitude": 1516
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            68.970646,
+            33.812225
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Logar",
+        "magnitude": 516
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            70.840961,
+            34.261704
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Nangarhar",
+        "magnitude": 380
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            70.190078,
+            34.640812
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Laghman",
+        "magnitude": 156
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            68.532772,
+            35.493251
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Baghlan",
+        "magnitude": 1604
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            66.965771,
+            34.586525
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Bamyan",
+        "magnitude": 156
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            67.767134,
+            33.086709
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Ghazni",
+        "magnitude": 11686
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            68.751118,
+            32.169088
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Paktika",
+        "magnitude": 2692
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            69.480059,
+            33.785489
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Paktya",
+        "magnitude": 680
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            70.120995,
+            33.366603
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Khost",
+        "magnitude": 330
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            71.400403,
+            35.14243
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Kunar",
+        "magnitude": 106
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            70.810303,
+            36.960125
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Badakhshan",
+        "magnitude": 156
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            69.718364,
+            37.088414
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Takhar",
+        "magnitude": 763
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            68.751391,
+            36.585567
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Kunduz",
+        "magnitude": 4278
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            67.701666,
+            35.699701
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Samangan",
+        "magnitude": 350
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            66.864417,
+            36.266376
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Balkh",
+        "magnitude": 816
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            66.121856,
+            35.989303
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Sar-e-Pul",
+        "magnitude": 1448
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            64.839648,
+            33.877773
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Ghor",
+        "magnitude": 272
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            66.140083,
+            34.043118
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Daykundi",
+        "magnitude": 806
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            66.578813,
+            33.132149
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Uruzgan",
+        "magnitude": 7942
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            67.572755,
+            31.892012
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Zabul",
+        "magnitude": 7116
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            65.667892,
+            30.561242
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Kandahar",
+        "magnitude": 30778
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            65.908307,
+            36.727944
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Jawzjan",
+        "magnitude": 1420
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            64.848759,
+            35.641452
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Faryab",
+        "magnitude": 602
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            63.985773,
+            30.459468
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Helmand",
+        "magnitude": 8788
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            63.61264,
+            35.516666
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Badghis",
+        "magnitude": 398
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            62.015471,
+            33.583128
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Herat",
+        "magnitude": 6114
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            61.814847,
+            32.385918
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Farah",
+        "magnitude": 2470
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            66.437425,
+            30.955879
+          ],
+          [
+            62.059899,
+            30.175326
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Spin Boldak \u2013  Chaman",
+        "province": "Nimroz",
+        "magnitude": 836
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            69.589362,
+            34.498247
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Kabul",
+        "magnitude": 97882
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            69.579117,
+            35.029641
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Kapisa",
+        "magnitude": 4666
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            68.540249,
+            34.858063
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Parwan",
+        "magnitude": 5068
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            68.504375,
+            33.990654
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Wardak",
+        "magnitude": 3156
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            68.970646,
+            33.812225
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Logar",
+        "magnitude": 9892
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            70.840961,
+            34.261704
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Nangarhar",
+        "magnitude": 132730
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            70.190078,
+            34.640812
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Laghman",
+        "magnitude": 17976
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            70.062755,
+            35.64688
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Panjsher",
+        "magnitude": 1894
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            68.532772,
+            35.493251
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Baghlan",
+        "magnitude": 8822
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            66.965771,
+            34.586525
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Bamyan",
+        "magnitude": 1648
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            67.767134,
+            33.086709
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Ghazni",
+        "magnitude": 4086
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            68.751118,
+            32.169088
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Paktika",
+        "magnitude": 4700
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            69.480059,
+            33.785489
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Paktya",
+        "magnitude": 8384
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            70.120995,
+            33.366603
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Khost",
+        "magnitude": 5928
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            71.400403,
+            35.14243
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Kunar",
+        "magnitude": 19766
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            71.197724,
+            35.570893
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Nuristan",
+        "magnitude": 474
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            70.810303,
+            36.960125
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Badakhshan",
+        "magnitude": 1052
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            69.718364,
+            37.088414
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Takhar",
+        "magnitude": 1806
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            68.751391,
+            36.585567
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Kunduz",
+        "magnitude": 11820
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            67.701666,
+            35.699701
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Samangan",
+        "magnitude": 1350
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            66.864417,
+            36.266376
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Balkh",
+        "magnitude": 7858
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            66.121856,
+            35.989303
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Sar-e-Pul",
+        "magnitude": 176
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            64.839648,
+            33.877773
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Ghor",
+        "magnitude": 176
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            66.140083,
+            34.043118
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Daykundi",
+        "magnitude": 350
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            66.578813,
+            33.132149
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Uruzgan",
+        "magnitude": 70
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            67.572755,
+            31.892012
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Zabul",
+        "magnitude": 106
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            65.667892,
+            30.561242
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Kandahar",
+        "magnitude": 1350
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            65.908307,
+            36.727944
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Jawzjan",
+        "magnitude": 1614
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            64.848759,
+            35.641452
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Faryab",
+        "magnitude": 562
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            63.985773,
+            30.459468
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Helmand",
+        "magnitude": 176
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            63.61264,
+            35.516666
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Badghis",
+        "magnitude": 88
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            62.015471,
+            33.583128
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Herat",
+        "magnitude": 5122
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            61.814847,
+            32.385918
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Farah",
+        "magnitude": 246
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            71.093202,
+            34.122641
+          ],
+          [
+            62.059899,
+            30.175326
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Torkham \u2013 Bab-i-Pakistan",
+        "province": "Nimroz",
+        "magnitude": 122
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            69.589362,
+            34.498247
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Kabul",
+        "magnitude": 20948
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            69.579117,
+            35.029641
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Kapisa",
+        "magnitude": 10134
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            68.540249,
+            34.858063
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Parwan",
+        "magnitude": 9036
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            68.504375,
+            33.990654
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Wardak",
+        "magnitude": 2660
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            68.970646,
+            33.812225
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Logar",
+        "magnitude": 2314
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            70.840961,
+            34.261704
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Nangarhar",
+        "magnitude": 4916
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            70.190078,
+            34.640812
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Laghman",
+        "magnitude": 6042
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            70.062755,
+            35.64688
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Panjsher",
+        "magnitude": 896
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            68.532772,
+            35.493251
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Baghlan",
+        "magnitude": 17898
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            66.965771,
+            34.586525
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Bamyan",
+        "magnitude": 1864
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            67.767134,
+            33.086709
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Ghazni",
+        "magnitude": 7850
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            68.751118,
+            32.169088
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Paktika",
+        "magnitude": 1416
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            69.480059,
+            33.785489
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Paktya",
+        "magnitude": 636
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            70.120995,
+            33.366603
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Khost",
+        "magnitude": 506
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            71.400403,
+            35.14243
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Kunar",
+        "magnitude": 534
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            71.197724,
+            35.570893
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Nuristan",
+        "magnitude": 86
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            70.810303,
+            36.960125
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Badakhshan",
+        "magnitude": 10236
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            69.718364,
+            37.088414
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Takhar",
+        "magnitude": 34204
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            68.751391,
+            36.585567
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Kunduz",
+        "magnitude": 28306
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            67.701666,
+            35.699701
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Samangan",
+        "magnitude": 3426
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            66.864417,
+            36.266376
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Balkh",
+        "magnitude": 18258
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            66.121856,
+            35.989303
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Sar-e-Pul",
+        "magnitude": 7576
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            64.839648,
+            33.877773
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Ghor",
+        "magnitude": 6866
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            66.140083,
+            34.043118
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Daykundi",
+        "magnitude": 3354
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            66.578813,
+            33.132149
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Uruzgan",
+        "magnitude": 258
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            67.572755,
+            31.892012
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Zabul",
+        "magnitude": 1792
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            65.667892,
+            30.561242
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Kandahar",
+        "magnitude": 2168
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            65.908307,
+            36.727944
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Jawzjan",
+        "magnitude": 3888
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            64.848759,
+            35.641452
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Faryab",
+        "magnitude": 8848
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            63.985773,
+            30.459468
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Helmand",
+        "magnitude": 9556
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            63.61264,
+            35.516666
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Badghis",
+        "magnitude": 8458
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            62.015471,
+            33.583128
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Herat",
+        "magnitude": 18086
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            61.814847,
+            32.385918
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Farah",
+        "magnitude": 29232
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.823383,
+            30.96555
+          ],
+          [
+            62.059899,
+            30.175326
+          ]
+        ]
+      },
+      "properties": {
+        "borderPoint": "Zaranj \u2013 Milak",
+        "province": "Nimroz",
+        "magnitude": 27916
+      }
+    }
+  ]
+}
