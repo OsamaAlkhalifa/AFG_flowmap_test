@@ -3,87 +3,54 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Animated Returnee Flowmap</title>
+  <title>Animated Flowmap with flowmap.gl</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+  <script src="https://unpkg.com/deck.gl@latest/dist.min.js"></script>
+  <script src="https://unpkg.com/flowmap.gl@latest/dist/flowmap.gl.min.js"></script>
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
   <style>
-    body, html {{ margin: 0; padding: 0; height: 100%; }}
-    #map {{ position: absolute; top: 0; bottom: 0; width: 100%; }}
-    #legend {{
-      position: absolute;
-      bottom: 20px;
-      left: 20px;
-      background: white;
-      padding: 10px;
-      font-size: 12px;
-      border-radius: 4px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.3);
-    }}
+    body, html { margin: 0; padding: 0; height: 100%; }
+    #map { position: absolute; top: 0; bottom: 0; width: 100%; }
   </style>
 </head>
 <body>
 <div id="map"></div>
-<div id="legend">
-  <strong>Flow Volume</strong><br>
-  <svg width="120" height="40">
-    <line x1="0" y1="10" x2="80" y2="10" style="stroke:rgba(255,87,51,0.5);stroke-width:1" />
-    <text x="85" y="13" font-size="10px">&lt; 10K</text>
-    <line x1="0" y1="25" x2="80" y2="25" style="stroke:rgba(255,87,51,0.8);stroke-width:5" />
-    <text x="85" y="28" font-size="10px">&gt; 50K</text>
-  </svg>
-</div>
-
+<script src="flowmap_data.js"></script>
 <script>
-mapboxgl.accessToken = 'pk.eyJ1Ijoib2Fsa2hhbGlmYSIsImEiOiJjbTV6YWVjZmQwMGl1MmxzZnppbnZjYmJyIn0.IoVs0_2CQotH_t4wFQFACw';
+  mapboxgl.accessToken = 'pk.eyJ1Ijoib2Fsa2hhbGlmYSIsImEiOiJjbTV6YWVjZmQwMGl1MmxzZnppbnZjYmJyIn0.IoVs0_2CQotH_t4wFQFACw';
 
-const map = new mapboxgl.Map({{
-  container: 'map',
-  style: 'mapbox://styles/mapbox/light-v11',
-  center: [66, 33],
-  zoom: 5
-}});
+  const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/light-v11',
+    center: [66, 33],
+    zoom: 5
+  });
 
-map.on('load', () => {{
-  map.addSource('flows', {{
-    type: 'geojson',
-    data: 'flow_lines.geojson'
-  }});
-
-  map.addLayer({{
-    id: 'flow-lines',
-    type: 'line',
-    source: 'flows',
-    paint: {{
-      'line-color': 'rgba(255,87,51,0.7)',
-      'line-width': [
-        'interpolate',
-        ['linear'],
-        ['get', 'magnitude'],
-        0, 1,
-        50000, 8
-      ],
-      'line-opacity': 0.8,
-      'line-blur': 0.5
-    }}
-  }});
-
-  let progress = 0;
-  function animateLineGradient() {{
-    progress += 0.01;
-    map.setPaintProperty('flow-lines', 'line-gradient', [
-      'interpolate',
-      ['linear'],
-      ['line-progress'],
-      0, 'rgba(255,87,51,0)',
-      progress % 1, 'rgba(255,87,51,0.9)',
-      1, 'rgba(255,87,51,0)'
-    ]);
-    requestAnimationFrame(animateLineGradient);
-  }}
-
-  animateLineGradient();
-}});
+  map.on('load', () => {
+    const deckgl = new deck.DeckGL({
+      canvas: 'deck-canvas',
+      width: '100%',
+      height: '100%',
+      map: map,
+      layers: [
+        new FlowmapLayer({
+          id: 'flowmap-layer',
+          locations,
+          flows,
+          getLocationId: d => d.id,
+          getLocationLat: d => d.lat,
+          getLocationLon: d => d.lon,
+          getFlowOriginId: d => d.origin,
+          getFlowDestId: d => d.dest,
+          getFlowMagnitude: d => d.count,
+          colorScheme: 'Oranges',
+          fadeAmount: 0.1,
+          fadeOpacityEnabled: true
+        })
+      ]
+    });
+  });
 </script>
 </body>
 </html>
