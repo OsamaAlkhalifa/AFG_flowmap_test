@@ -210,23 +210,31 @@ require([
     }
 
     flowLayer = new CanvasFlowmapLayer({
-      view: view,
-      locations: filtered,
-      originLongitudeField: "originLongitude",
-      originLatitudeField: "originLatitude",
-      destinationLongitudeField: "destinationLongitude",
-      destinationLatitudeField: "destinationLatitude",
-      pathDisplayMode: "all",
-      animatePoints: true,
-      showArrowHead: true,
-      flowLineColor: "#FF5733",
-      flowThickness: {
-        type: "simple",
-        field: "magnitude",
-        minThickness: 1,
-        maxThickness: 10
-      }
-    });
+        view: view,
+        locations: filtered,
+        originAndDestinationFieldIds: {
+          originUniqueIdField: "borderPoint",
+          originGeometry: {
+            x: "originLongitude",
+            y: "originLatitude",
+            spatialReference: {
+              wkid: 4326
+            }
+          },
+          destinationUniqueIdField: "province",
+          destinationGeometry: {
+            x: "destinationLongitude",
+            y: "destinationLatitude",
+            spatialReference: {
+              wkid: 4326
+            }
+          }
+        },
+        pathDisplayMode: "all",
+        animatePoints: true,
+        showArrowHead: true
+      });
+      
 
     view.map.add(flowLayer);
   }
