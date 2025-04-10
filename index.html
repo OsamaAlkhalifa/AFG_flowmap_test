@@ -5,6 +5,8 @@
   <title>Returnee Flow Map</title>
   <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css" />
   <script src="https://js.arcgis.com/4.28/"></script>
+  <script src="CanvasFlowmapLayer.js"></script>
+  <script src="app.js"></script>
   <style>
     html, body, #viewDiv {
       margin: 0;
@@ -24,13 +26,16 @@
     #filterPanel { top: 10px; left: 10px; }
     #legend { bottom: 20px; left: 10px; font-size: 12px; }
   </style>
+  <script>
+    require(["CanvasFlowmapLayer", "app"]);
+  </script>
 </head>
 <body>
   <div id="viewDiv"></div>
 
   <div id="filterPanel">
     <h4>Select Border Points</h4>
-    <!-- checkboxes will be auto-populated -->
+    <!-- we'll auto-populate this using JS -->
   </div>
 
   <div id="legend">
@@ -47,11 +52,6 @@
     </svg>
   </div>
 
-  <!-- Load your JS files after ArcGIS -->
-  <script src="CanvasFlowmapLayer.js"></script>
   <script src="app.js"></script>
-  <script>
-    require(["CanvasFlowmapLayer", "app"]);
-  </script>
 </body>
 </html>
