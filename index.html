@@ -16,27 +16,26 @@
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
   <script src="CanvasFlowmapLayer.js"></script>
   <script>
-    var map = L.map('map').setView([33.0, 66.0], 6);
+    const map = L.map('map').setView([33.0, 66.0], 6);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
       attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
-    fetch('afghanistan_flows.geojson')
-      .then(response => response.json())
+    fetch('afghanistan_flows_final.geojson')
+      .then(res => res.json())
       .then(data => {
-        var flowLayer = L.canvasFlowmapLayer(data, {
+        const flowLayer = L.canvasFlowmapLayer(data, {
           originAndDestinationFieldIds: {
             originUniqueIdField: 'origin_id',
-            originGeometry: {
-              x: 's_lon',
-              y: 's_lat'
-            },
-            destinationUniqueIdField: 'destination_id',
-            destinationGeometry: {
-              x: 'e_lon',
-              y: 'e_lat'
+            destinationUniqueIdField: 'destination_id'
+          },
+          canvasBezierStyle: {
+            type: 'simple',
+            symbol: {
+              strokeStyle: 'rgba(0, 136, 204, 0.9)',
+              lineWidth: 2
             }
           },
           pathDisplayMode: 'all',
@@ -44,13 +43,6 @@
           animationEasingFamily: 'Cubic',
           animationEasingType: 'In',
           animationDuration: 2000,
-          canvasBezierStyle: {
-            type: 'simple',
-            symbol: {
-              strokeStyle: 'rgba(0, 136, 204, 0.9)',
-              lineWidth: 1.5
-            }
-          }
         }).addTo(map);
       });
   </script>
