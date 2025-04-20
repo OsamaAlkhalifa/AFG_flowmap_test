@@ -94,41 +94,45 @@ require([
           });
           canvasLayer.addGraphics(csvGraphics);
 
-          // Populate city selector (multi-select)
+          // Populate city selector (checkbox list)
           let uniqueCities = [...new Set(results.data.map(d => d.s_city).filter(c => c))].sort();
           let citySelector = document.getElementById('sCitySelect');
-          citySelector.setAttribute('multiple', 'multiple');
-          citySelector.size = 10;
 
           citySelector.innerHTML = '';
-          let allOption = document.createElement('option');
-          allOption.value = '__all__';
-          allOption.textContent = '-- All FMPs --';
-          citySelector.appendChild(allOption);
+
+          let allCheckbox = document.createElement('div');
+          allCheckbox.innerHTML = `
+            <label><input type="checkbox" value="__all__" checked> All FMPs</label><br>
+          `;
+          citySelector.appendChild(allCheckbox);
 
           uniqueCities.forEach(city => {
-            let option = document.createElement('option');
-            option.value = city;
-            option.textContent = city;
-            citySelector.appendChild(option);
+            let checkbox = document.createElement('div');
+            checkbox.innerHTML = `
+              <label><input type="checkbox" value="${city}"> ${city}</label><br>
+            `;
+            citySelector.appendChild(checkbox);
           });
 
           citySelector.addEventListener('change', function(evt) {
-            let selectedOptions = Array.from(evt.target.selectedOptions).map(opt => opt.value);
+            let checkboxes = citySelector.querySelectorAll('input[type="checkbox"]');
+            let selectedValues = Array.from(checkboxes)
+              .filter(cb => cb.checked)
+              .map(cb => cb.value);
 
-            if (selectedOptions.includes('__all__') || selectedOptions.length === 0) {
+            if (selectedValues.includes('__all__')) {
               const allGraphics = canvasLayer.graphics;
               canvasLayer.selectGraphicsForPathDisplay(allGraphics, 'SELECTION_NEW');
               return;
             }
 
             let matchingGraphics = canvasLayer.graphics.filter(
-              g => selectedOptions.includes(g.attributes.s_city)
+              g => selectedValues.includes(g.attributes.s_city)
             );
             canvasLayer.selectGraphicsForPathDisplay(matchingGraphics, 'SELECTION_NEW');
           });
 
-          // Trigger initial selection of all cities
+          // Trigger initial selection of all graphics
           const allGraphics = canvasLayer.graphics;
           canvasLayer.selectGraphicsForPathDisplay(allGraphics, 'SELECTION_NEW');
         }
