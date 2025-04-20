@@ -53,7 +53,7 @@ require([
       },
       //  - optional
       pathDisplayMode: 'selection',
-      wrapAroundCanvas: true,
+      wrapAroundCanvas: false,
       animationStarted: true,
       pathProperties: {
         type: 'classBreaks',
