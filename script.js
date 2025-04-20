@@ -52,9 +52,9 @@ require([
         }
       },
       //  - optional
-      pathDisplayMode: 'selection',
+      pathDisplayMode: 'all',
       wrapAroundCanvas: true,
-      animationStarted: false,
+      animationStarted: true,
       pathProperties: {
         type: 'classBreaks',
         field: 'e_vol', // <-- use your actual volume field name from the CSV
@@ -173,13 +173,7 @@ require([
           });
 
           // add all graphics to the canvas flowmap layer
-          canvasLayer.addGraphics(csvGraphics);
-              // ✅ Auto-animate all flows after short delay
-              setTimeout(function () {
-                canvasLayer.graphics.forEach(function(graphic) {
-                  canvasLayer.selectGraphicsForPathDisplayById('s_city_id', graphic.attributes.s_city_id, false, 'SELECTION_ADD');
-                });
-              }, 500);
+        
             }
         });  
     }
