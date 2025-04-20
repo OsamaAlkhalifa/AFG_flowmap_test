@@ -55,13 +55,49 @@
         opacity: 1.0;
       }
     }
+    #legend {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(30, 30, 30, 0.85);
+    color: white;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 40;
+  }
 
+  #legend h4 {
+    margin: 0 0 8px 0;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .legend-line {
+    display: inline-block;
+    width: 30px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+
+  #legend div {
+    margin-bottom: 4px;
+  }
   </style>
 </head>
 
 <body class="calcite">
 
   <div id="map"></div>
+  <div id="legend" class="esri-widget">
+    <h4>Flow Volume</h4>
+    <div><span class="legend-line" style="background: yellow; height: 2px;"></span> 1 – 5,000</div>
+    <div><span class="legend-line" style="background: orange; height: 4px;"></span> 5,001 – 25,000</div>
+    <div><span class="legend-line" style="background: red; height: 6px;"></span> 25,001 – 60,000</div>
+  </div>
+  
+
 
   <div class="controls-panel">
     <div class="card card-bar-blue animate-fade-in custom-card-shadow off" id="controlsPanelCard">
