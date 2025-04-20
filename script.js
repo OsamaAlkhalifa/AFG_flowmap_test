@@ -21,7 +21,7 @@ require([
   var pathSelectionTypeSelect = document.getElementById('pathSelectionTypeSelect');
 
   var map = new Map('map', {
-    basemap: 'dark-gray-vector',
+    basemap: 'gray-vector',
     center: [66.9, 34.5],
     zoom: 5
   });
