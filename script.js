@@ -57,7 +57,7 @@ require([
       animationStarted: true,
       pathProperties: {
         type: 'classBreaks',
-        field: 'e_vlo', // <-- use your actual volume field name from the CSV
+        field: 'e_vol', // <-- use your actual volume field name from the CSV
         classBreakInfos: [
           {
             classMinValue: 0,
