@@ -34,7 +34,7 @@ require([
           spatialReference: { wkid: 4326 }
         }
       },
-      pathDisplayMode: 'all',
+      pathDisplayMode: 'selection',
       wrapAroundCanvas: true,
       animationStarted: true,
       pathProperties: {
@@ -116,7 +116,8 @@ require([
             let selectedOptions = Array.from(evt.target.selectedOptions).map(opt => opt.value);
 
             if (selectedOptions.includes('__all__') || selectedOptions.length === 0) {
-              canvasLayer.setPathDisplayMode('all');
+              const allGraphics = canvasLayer.graphics;
+              canvasLayer.selectGraphicsForPathDisplay(allGraphics, 'SELECTION_NEW');
               return;
             }
 
