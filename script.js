@@ -11,14 +11,14 @@ require([
   on
 ) {
   // establish references to form elements in the controls card
-  var oneToManyLayerButton = document.getElementById('oneToManyLayerButton');
+//var oneToManyLayerButton = document.getElementById('oneToManyLayerButton');
  // var manyToOneLayerButton = document.getElementById('manyToOneLayerButton');
  // var oneToOneLayerButton = document.getElementById('oneToOneLayerButton');
-  var pathAnimationButton = document.getElementById('pathAnimationButton');
-  var pathAnimationStyleSelect = document.getElementById('pathAnimationStyleSelect');
-  var pathAnimationDurationInput = document.getElementById('pathAnimationDurationInput');
-  var userInteractionSelect = document.getElementById('userInteractionSelect');
-  var pathSelectionTypeSelect = document.getElementById('pathSelectionTypeSelect');
+ // var pathAnimationButton = document.getElementById('pathAnimationButton');
+ // var pathAnimationStyleSelect = document.getElementById('pathAnimationStyleSelect');
+ // var pathAnimationDurationInput = document.getElementById('pathAnimationDurationInput');
+//  var userInteractionSelect = document.getElementById('userInteractionSelect');
+//  var pathSelectionTypeSelect = document.getElementById('pathSelectionTypeSelect');
 
   var map = new Map('map', {
     basemap: 'gray-vector',
@@ -236,7 +236,7 @@ require([
 
     setTimeout(function() {
       // show the controls card after a brief delay
-      document.getElementById('controlsPanelCard').classList.remove('off');
+   //   document.getElementById('controlsPanelCard').classList.remove('off');
 
       // automatically select some graphics for path display to demonstrate the flowmap functionality,
       // without the user having to first click on the layer
@@ -248,7 +248,7 @@ require([
     }, 3000);
 
     // establish actions for form elements in the controls card
-    oneToManyLayerButton.addEventListener('click', toggleActiveLayer);
+    //oneToManyLayerButton.addEventListener('click', toggleActiveLayer);
    // manyToOneLayerButton.addEventListener('click', toggleActiveLayer);
    // oneToOneLayerButton.addEventListener('click', toggleActiveLayer);
 
@@ -265,14 +265,14 @@ require([
       evt.target.classList.remove('btn-clear');
     }
 
-    pathAnimationButton.addEventListener('click', function(evt) {
-      var iconNode = evt.currentTarget.children[0];
-      iconNode.classList.toggle('icon-ui-pause');
-      iconNode.classList.toggle('icon-ui-red');
-      iconNode.classList.toggle('icon-ui-play');
-      iconNode.classList.toggle('cus-icon-green');
+   // pathAnimationButton.addEventListener('click', function(evt) {
+   //   var iconNode = evt.currentTarget.children[0];
+   //   iconNode.classList.toggle('icon-ui-pause');
+   //   iconNode.classList.toggle('icon-ui-red');
+   //   iconNode.classList.toggle('icon-ui-play');
+   //   iconNode.classList.toggle('cus-icon-green');
 
-      toggleLayerAnimation(oneToManyLayer);
+     // toggleLayerAnimation(oneToManyLayer);
       //toggleLayerAnimation(manyToOneLayer);
       //toggleLayerAnimation(oneToOneLayer);
     });
@@ -285,15 +285,15 @@ require([
       }
     }
 
-    pathAnimationStyleSelect.addEventListener('change', function(evt) {
-      var optionValueToArray = evt.target.value.split(',');
-      var easingFamily = optionValueToArray[0];
-      var easingType = optionValueToArray[1];
+   // pathAnimationStyleSelect.addEventListener('change', function(evt) {
+    //  var optionValueToArray = evt.target.value.split(',');
+     // var easingFamily = optionValueToArray[0];
+     // var easingType = optionValueToArray[1];
 
-      oneToManyLayer.setAnimationEasing(easingFamily, easingType);
+   //   oneToManyLayer.setAnimationEasing(easingFamily, easingType);
       //manyToOneLayer.setAnimationEasing(easingFamily, easingType);
       //oneToOneLayer.setAnimationEasing(easingFamily, easingType);
-    });
+    //});
 
     pathAnimationDurationInput.addEventListener('input', function(evt) {
       oneToManyLayer.setAnimationDuration(evt.target.value);
