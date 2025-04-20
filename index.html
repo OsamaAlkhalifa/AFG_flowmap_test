@@ -94,18 +94,23 @@
 #cityFilter {
   position: absolute;
   top: 15px;
-  left: 15px;
+  right: 15px;
   z-index: 30;
   background: white;
   padding: 10px;
   border-radius: 4px;
-  max-height: none;
-  overflow-y: visible;
+  max-height: 90%;
+  max-width: 250px;
+  overflow-y: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-#sCitySelect {
-  max-height: none;
-  overflow-y: visible;
+
+#sCitySelect label {
+  display: block;
+  margin: 4px 0;
+  font-size: 14px;
 }
+
 
   #legend h4 {
     margin: 0 0 8px 0;
@@ -126,10 +131,11 @@
   </style>
 </head>
 
-<div id="cityFilter" style="position: absolute; top: 15px; right: 15px; z-index: 30; background: white; padding: 10px; border-radius: 4px;">
-  <label for="sCitySelect" style="font-weight: bold; font-size: 14px;">Select flow monitoring point:</label>
-  <div id="sCitySelect" class="city-checkbox-list"></div>
+<div id="cityFilter">
+  <label for="sCitySelect" style="font-weight: bold; font-size: 15px;">Select flow monitoring point:</label><br>
+  <div id="sCitySelect" style="max-height: 400px; overflow-y: auto;"></div>
 </div>
+
 
 
   <div id="map"></div>
