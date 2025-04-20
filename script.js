@@ -89,7 +89,7 @@ require([
         ]
       }
     });
-    });
+   
 
   //  var manyToOneLayer = new CanvasFlowmapLayer({
    //   id: 'manyToOneLayer',
