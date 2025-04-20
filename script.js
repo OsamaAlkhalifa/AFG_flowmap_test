@@ -103,7 +103,7 @@ require([
           citySelector.innerHTML = '';
           let allOption = document.createElement('option');
           allOption.value = '__all__';
-          allOption.textContent = '-- All Cities --';
+          allOption.textContent = '-- All FMPs --';
           citySelector.appendChild(allOption);
 
           uniqueCities.forEach(city => {
@@ -129,7 +129,6 @@ require([
           });
 
           // Trigger initial selection of all cities
-          citySelector.value = '__all__';
           const allGraphics = canvasLayer.graphics;
           canvasLayer.selectGraphicsForPathDisplay(allGraphics, 'SELECTION_NEW');
         }
