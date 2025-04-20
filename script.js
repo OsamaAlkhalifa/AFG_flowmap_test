@@ -94,9 +94,16 @@ require([
           });
           canvasLayer.addGraphics(csvGraphics);
 
-          // Populate city selector
+          // Populate city selector (multi-select)
           let uniqueCities = [...new Set(results.data.map(d => d.s_city))].sort();
           let citySelector = document.getElementById('sCitySelect');
+          citySelector.setAttribute('multiple', 'multiple');
+
+          // Add 'All Cities' as a special option
+          let allOption = document.createElement('option');
+          allOption.value = '__all__';
+          allOption.textContent = '-- All Cities --';
+          citySelector.appendChild(allOption);
 
           uniqueCities.forEach(city => {
             let option = document.createElement('option');
@@ -106,13 +113,15 @@ require([
           });
 
           citySelector.addEventListener('change', function(evt) {
-            let selectedCity = evt.target.value;
-            if (!selectedCity) {
+            let selectedOptions = Array.from(evt.target.selectedOptions).map(opt => opt.value);
+
+            if (selectedOptions.includes('__all__') || selectedOptions.length === 0) {
               canvasLayer.setPathDisplayMode('all');
               return;
             }
+
             let matchingGraphics = canvasLayer.graphics.filter(
-              g => g.attributes.s_city === selectedCity
+              g => selectedOptions.includes(g.attributes.s_city)
             );
             canvasLayer.selectGraphicsForPathDisplay(matchingGraphics, 'SELECTION_NEW');
           });
