@@ -60,7 +60,7 @@ require([
         field: 'e_vol', // <-- use your actual volume field name from the CSV
         classBreakInfos: [
           {
-            classMinValue: 0,
+            classMinValue: 1,
             classMaxValue: 5000,
             symbol: {
               strokeStyle: 'rgba(255, 202, 85, 0.8)',
@@ -179,7 +179,7 @@ require([
                 canvasLayer.graphics.forEach(function(graphic) {
                   canvasLayer.selectGraphicsForPathDisplayById('s_city_id', graphic.attributes.s_city_id, false, 'SELECTION_ADD');
                 });
-              }, 500);
+              }, 5000);
             }
         });  
     }
