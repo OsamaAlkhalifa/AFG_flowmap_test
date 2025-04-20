@@ -34,7 +34,7 @@ require([
           spatialReference: { wkid: 4326 }
         }
       },
-      pathDisplayMode: 'all',
+      pathDisplayMode: 'selection',
       wrapAroundCanvas: true,
       animationStarted: true,
       pathProperties: {
