@@ -171,9 +171,34 @@ require([
               attributes: datum
             });
           });
+canvasLayer.addGraphics(csvGraphics);
+
+// Populate city selector with unique source cities
+let uniqueCities = [...new Set(results.data.map(d => d.s_city))].sort();
+let citySelector = document.getElementById('citySelector');
+
+uniqueCities.forEach(city => {
+  let option = document.createElement('option');
+  option.value = city;
+  option.textContent = city;
+  citySelector.appendChild(option);
+});
+
+// Add event listener for dropdown
+citySelector.addEventListener('change', function(evt) {
+  let selectedCity = evt.target.value;
+  if (!selectedCity) {
+    canvasLayer.setPathDisplayMode('all');
+    return;
+  }
+
+  let matchingGraphics = canvasLayer.graphics.filter(
+    g => g.attributes.s_city === selectedCity
+  );
+  canvasLayer.selectGraphicsForPathDisplay(matchingGraphics, 'SELECTION_NEW');
+});
 
           // add all graphics to the canvas flowmap layer
-        canvasLayer.addGraphics(csvGraphics);
 
             }
         });  
