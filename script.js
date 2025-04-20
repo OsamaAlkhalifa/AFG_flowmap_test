@@ -52,7 +52,7 @@ require([
         }
       },
       //  - optional
-      pathDisplayMode: 'all',
+      pathDisplayMode: 'selection',
       wrapAroundCanvas: true,
       animationStarted: true,
       pathProperties: {
@@ -177,7 +177,7 @@ require([
               // ✅ Auto-animate all flows after short delay
               setTimeout(function () {
                 canvasLayer.graphics.forEach(function(graphic) {
-                  canvasLayer.selectGraphicsForPathDisplayById('s_city_id', graphic.attributes.s_city_id, false, 'SELECTION_NEW');
+                  canvasLayer.selectGraphicsForPathDisplayById('s_city_id', graphic.attributes.s_city_id, false, 'SELECTION_ADD');
                 });
               }, 500);
             }
