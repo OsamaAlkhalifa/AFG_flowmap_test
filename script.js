@@ -180,7 +180,7 @@ require([
     }
 
     // populate animation easing options for select drop-down
-
+    var pathAnimationStyleSelect = document.getElementById('pathAnimationStyleSelect');
     var tweenEasingFamilies = oneToManyLayer.getAnimationEasingOptions();
     Object.keys(tweenEasingFamilies).forEach(function(family) {
       tweenEasingFamilies[family].types.forEach(function(type) {
