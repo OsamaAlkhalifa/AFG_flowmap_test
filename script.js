@@ -34,7 +34,7 @@ require([
           spatialReference: { wkid: 4326 }
         }
       },
-      pathDisplayMode: 'selection',
+      pathDisplayMode: 'all',
       wrapAroundCanvas: true,
       animationStarted: true,
       pathProperties: {
@@ -100,10 +100,13 @@ require([
           citySelector.setAttribute('multiple', 'multiple');
 
           // Add 'All Cities' as a special option
-          let allOption = document.createElement('option');
-          allOption.value = '__all__';
-          allOption.textContent = '-- All Cities --';
-          citySelector.appendChild(allOption);
+          if (!uniqueCities.includes('-- All Cities --')) {
+         let allOption = document.createElement('option');
+        allOption.value = '__all__';
+         allOption.textContent = '-- All Cities --';
+        citySelector.appendChild(allOption);
+}
+
 
           uniqueCities.forEach(city => {
             let option = document.createElement('option');
