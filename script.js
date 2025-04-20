@@ -275,7 +275,7 @@ require([
      // toggleLayerAnimation(oneToManyLayer);
       //toggleLayerAnimation(manyToOneLayer);
       //toggleLayerAnimation(oneToOneLayer);
-    });
+ //   });
 
     function toggleLayerAnimation(canvasLayer) {
       if (canvasLayer.animationStarted) {
