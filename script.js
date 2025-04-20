@@ -95,18 +95,16 @@ require([
           canvasLayer.addGraphics(csvGraphics);
 
           // Populate city selector (multi-select)
-          let uniqueCities = [...new Set(results.data.map(d => d.s_city))].sort();
+          let uniqueCities = [...new Set(results.data.map(d => d.s_city).filter(c => c))].sort();
           let citySelector = document.getElementById('sCitySelect');
           citySelector.setAttribute('multiple', 'multiple');
+          citySelector.size = 10;
 
-          // Add 'All Cities' as a special option
-          if (!uniqueCities.includes('-- All Cities --')) {
-         let allOption = document.createElement('option');
-        allOption.value = '__all__';
-         allOption.textContent = '-- All Cities --';
-        citySelector.appendChild(allOption);
-}
-
+          citySelector.innerHTML = '';
+          let allOption = document.createElement('option');
+          allOption.value = '__all__';
+          allOption.textContent = '-- All Cities --';
+          citySelector.appendChild(allOption);
 
           uniqueCities.forEach(city => {
             let option = document.createElement('option');
@@ -129,6 +127,11 @@ require([
             );
             canvasLayer.selectGraphicsForPathDisplay(matchingGraphics, 'SELECTION_NEW');
           });
+
+          // Trigger initial selection of all cities
+          citySelector.value = '__all__';
+          const allGraphics = canvasLayer.graphics;
+          canvasLayer.selectGraphicsForPathDisplay(allGraphics, 'SELECTION_NEW');
         }
       });
     }
