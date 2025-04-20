@@ -52,9 +52,43 @@ require([
         }
       },
       //  - optional
-      pathDisplayMode: 'selection',
+      pathDisplayMode: 'all',
       wrapAroundCanvas: true,
-      animationStarted: true
+      animationStarted: true,
+      pathProperties: {
+        type: 'classBreaks',
+        field: 'volume', // <-- use your actual volume field name from the CSV
+        classBreakInfos: [
+          {
+            classMinValue: 0,
+            classMaxValue: 5000,
+            symbol: {
+              strokeStyle: 'rgba(255, 202, 85, 0.8)',
+              lineWidth: 1,
+              lineCap: 'round'
+            }
+          },
+          {
+            classMinValue: 5001,
+            classMaxValue: 25000,
+            symbol: {
+              strokeStyle: 'rgba(255, 141, 87, 0.8)',
+              lineWidth: 3,
+              lineCap: 'round'
+            }
+          },
+          {
+            classMinValue: 25001,
+            classMaxValue: 60000,
+            symbol: {
+              strokeStyle: 'rgba(210, 38, 48, 0.8)',
+              lineWidth: 5,
+              lineCap: 'round'
+            }
+          }
+        ]
+      }
+    });
     });
 
   //  var manyToOneLayer = new CanvasFlowmapLayer({
