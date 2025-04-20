@@ -270,7 +270,7 @@ require([
       iconNode.classList.toggle('icon-ui-pause');
       iconNode.classList.toggle('icon-ui-red');
       iconNode.classList.toggle('icon-ui-play');
-      iconNode.classList.toggle('icon-ui-green');
+      iconNode.classList.toggle('cus-icon-ui-green');
 
       toggleLayerAnimation(oneToManyLayer);
       //toggleLayerAnimation(manyToOneLayer);
