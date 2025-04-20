@@ -79,7 +79,7 @@ require([
           },
           {
             classMinValue: 25001,
-            classMaxValue: 60000,
+            classMaxValue: 592169,
             symbol: {
               strokeStyle: 'rgba(210, 38, 48, 0.8)',
               lineWidth: 5,
