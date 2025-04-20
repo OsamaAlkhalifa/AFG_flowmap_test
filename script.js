@@ -179,7 +179,7 @@ require([
                 canvasLayer.graphics.forEach(function(graphic) {
                   canvasLayer.selectGraphicsForPathDisplayById('s_city_id', graphic.attributes.s_city_id, false, 'SELECTION_ADD');
                 });
-              }, 5000);
+              }, 500);
             }
         });  
     }
