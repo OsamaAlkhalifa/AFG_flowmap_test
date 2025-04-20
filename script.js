@@ -173,7 +173,8 @@ require([
           });
 
           // add all graphics to the canvas flowmap layer
-        
+        canvasLayer.addGraphics(csvGraphics);
+
             }
         });  
     }
