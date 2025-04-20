@@ -53,8 +53,8 @@ require([
       },
       //  - optional
       pathDisplayMode: 'selection',
-      wrapAroundCanvas: false,
-      animationStarted: true,
+      wrapAroundCanvas: true,
+      animationStarted: false,
       pathProperties: {
         type: 'classBreaks',
         field: 'e_vol', // <-- use your actual volume field name from the CSV
