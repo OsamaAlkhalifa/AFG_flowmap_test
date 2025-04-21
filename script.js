@@ -21,16 +21,16 @@ require([
       id: 'oneToManyLayer',
       visible: true,
       originAndDestinationFieldIds: {
-        originUniqueIdField: 's_city_id',
+        originUniqueIdField: 'e_locality',
         originGeometry: {
-          x: 's_lon',
-          y: 's_lat',
-          spatialReference: { wkid: 4326 }
-        },
-        destinationUniqueIdField: 'e_city_id',
-        destinationGeometry: {
           x: 'e_lon',
           y: 'e_lat',
+          spatialReference: { wkid: 4326 }
+        },
+        destinationUniqueIdField: 's_State',
+        destinationGeometry: {
+          x: 's_lon',
+          y: 's_lat',
           spatialReference: { wkid: 4326 }
         }
       },
@@ -39,7 +39,7 @@ require([
       animationStarted: true,
       pathProperties: {
         type: 'classBreaks',
-        field: 'e_vol',
+        field: 'e_Volume',
         classBreakInfos: [
           {
             classMinValue: 1,
@@ -69,11 +69,25 @@ require([
             }
           }
         ]
+      },
+      pointSymbol: {
+        origin: {
+          radius: 8,
+          fillStyle: 'rgba(0, 128, 0, 0.9)',
+          strokeStyle: 'white',
+          lineWidth: 2
+        },
+        destination: {
+          radius: 6,
+          fillStyle: 'rgba(0, 0, 255, 0.8)',
+          strokeStyle: 'white',
+          lineWidth: 1.5
+        }
       }
     });
 
     map.addLayer(oneToManyLayer);
-    createGraphicsFromCsv('csv-data/inflow_v1.csv', oneToManyLayer);
+    createGraphicsFromCsv('csv-data/outflow origin.csv', oneToManyLayer);
 
     function createGraphicsFromCsv(csvFilePath, canvasLayer) {
       Papa.parse(csvFilePath, {
@@ -94,18 +108,15 @@ require([
           });
           canvasLayer.addGraphics(csvGraphics);
 
-          // Populate city selector (checkbox list)
-          let uniqueCities = [...new Set(results.data.map(d => d.s_city).filter(c => c))].sort();
+          let uniqueCities = [...new Set(results.data.map(d => d.e_locality).filter(c => c))].sort();
           let citySelector = document.getElementById('sCitySelect');
 
           citySelector.innerHTML = '';
 
           let allCheckbox = document.createElement('div');
-        allCheckbox.innerHTML = `
-  <label><input type="checkbox" value="__all__" checked> <strong>All FMPs</strong></label>
-`;
-
-
+          allCheckbox.innerHTML = `
+            <label><input type="checkbox" value="__all__" checked> <strong>All FMPs</strong></label><br>
+          `;
           citySelector.appendChild(allCheckbox);
 
           uniqueCities.forEach(city => {
@@ -129,12 +140,11 @@ require([
             }
 
             let matchingGraphics = canvasLayer.graphics.filter(
-              g => selectedValues.includes(g.attributes.s_city)
+              g => selectedValues.includes(g.attributes.e_locality)
             );
             canvasLayer.selectGraphicsForPathDisplay(matchingGraphics, 'SELECTION_NEW');
           });
 
-          // Trigger initial selection of all graphics
           const allGraphics = canvasLayer.graphics;
           canvasLayer.selectGraphicsForPathDisplay(allGraphics, 'SELECTION_NEW');
         }
