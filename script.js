@@ -43,7 +43,7 @@ require([
         classBreakInfos: [
           {
             classMinValue: 1,
-            classMaxValue: 5000,
+            classMaxValue: 25000,
             symbol: {
               strokeStyle: 'rgba(255, 202, 85, 0.8)',
               lineWidth: 1,
@@ -51,8 +51,8 @@ require([
             }
           },
           {
-            classMinValue: 5001,
-            classMaxValue: 25000,
+            classMinValue: 25001,
+            classMaxValue: 100000,
             symbol: {
               strokeStyle: 'rgba(255, 141, 87, 0.8)',
               lineWidth: 3,
@@ -60,7 +60,7 @@ require([
             }
           },
           {
-            classMinValue: 25001,
+            classMinValue: 100001,
             classMaxValue: 592169,
             symbol: {
               strokeStyle: 'rgba(210, 38, 48, 0.8)',
